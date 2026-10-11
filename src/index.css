@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import "tailwindcss";
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: radial-gradient(circle at 20% 20%, #0f0c2e, #07051a);
+  color: white;
+}
+
+@keyframes loop-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-loop-scroll {
+  animation: loop-scroll 20s linear infinite;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  display: flex;
+  width: max-content; /* Critical: Prevents content from squishing */
+  animation: scroll 20s linear infinite;
+}
+
