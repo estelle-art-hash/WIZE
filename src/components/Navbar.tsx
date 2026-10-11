@@ -65,7 +65,7 @@ const Navbar = () => {
         <button
           type="button"
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-[#C6FF00] text-2xl p-1"
+          className="md:hidden text-white/60 hover:text-[#C6FF00] text-2xl p-1 transition-colors duration-200"
           aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={menuOpen}
         >
